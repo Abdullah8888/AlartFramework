@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SegmentOptionView" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="FR2-Ub-LQh" id="uV9-U0-cOW"/>
+                <outlet property="indicatorView" destination="gHB-BZ-ocw" id="ISv-Mx-oTV"/>
+                <outlet property="segmentImage" destination="jrD-1Y-YDz" id="XBH-ml-gr1"/>
+                <outlet property="titleLbl" destination="6dY-KM-qP2" id="9Kb-cX-Yfl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="173" height="105"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FR2-Ub-LQh">
+                    <rect key="frame" x="0.0" y="0.0" width="173" height="105"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XIy-4y-Ikp">
+                            <rect key="frame" x="20" y="20" width="133" height="14.333333333333336"/>
+                            <subviews>
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person_add_icon" translatesAutoresizingMaskIntoConstraints="NO" id="jrD-1Y-YDz">
+                                    <rect key="frame" x="48.666666666666671" y="0.0" width="36" height="36"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="36" id="Bp4-EB-4iA"/>
+                                        <constraint firstAttribute="height" constant="36" id="JSh-g0-gBa"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved Beneficiary" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dY-KM-qP2" customClass="SemiLabel" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="15.999999999999993" y="0.0" width="101.33333333333331" height="14.333333333333334"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="6dY-KM-qP2" firstAttribute="centerX" secondItem="jrD-1Y-YDz" secondAttribute="centerX" id="prG-4e-fRq"/>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHB-BZ-ocw">
+                            <rect key="frame" x="0.0" y="103" width="173" height="2"/>
+                            <color key="backgroundColor" name="GreyLight"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="ja6-fI-Sh4"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="XIy-4y-Ikp" firstAttribute="leading" secondItem="FR2-Ub-LQh" secondAttribute="leading" constant="20" id="GeH-Dx-kj7"/>
+                        <constraint firstAttribute="trailing" secondItem="XIy-4y-Ikp" secondAttribute="trailing" constant="20" id="Wjn-9A-HMr"/>
+                        <constraint firstAttribute="trailing" secondItem="gHB-BZ-ocw" secondAttribute="trailing" id="XoJ-gn-nF4"/>
+                        <constraint firstItem="gHB-BZ-ocw" firstAttribute="leading" secondItem="FR2-Ub-LQh" secondAttribute="leading" id="bQu-4J-XIR"/>
+                        <constraint firstAttribute="bottom" secondItem="gHB-BZ-ocw" secondAttribute="bottom" id="jex-7V-qSs"/>
+                        <constraint firstItem="XIy-4y-Ikp" firstAttribute="top" secondItem="FR2-Ub-LQh" secondAttribute="top" constant="20" id="lin-UH-vld"/>
+                        <constraint firstItem="XIy-4y-Ikp" firstAttribute="centerX" secondItem="FR2-Ub-LQh" secondAttribute="centerX" id="wy0-8S-zGG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="FR2-Ub-LQh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="H7z-y3-w0U"/>
+                <constraint firstAttribute="bottom" secondItem="FR2-Ub-LQh" secondAttribute="bottom" id="aXx-1U-g6Y"/>
+                <constraint firstAttribute="trailing" secondItem="FR2-Ub-LQh" secondAttribute="trailing" id="gZ5-ry-oap"/>
+                <constraint firstItem="FR2-Ub-LQh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rWQ-Z6-JNf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-31.297709923664122" y="-243.3098591549296"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="6dY-KM-qP2">
+            <size key="intrinsicContentSize" width="101.33333333333333" height="14.333333333333334"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="person_add_icon" width="36" height="36"/>
+        <namedColor name="GreyLight">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

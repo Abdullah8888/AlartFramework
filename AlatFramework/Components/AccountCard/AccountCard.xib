@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountCard" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="accountBalance" destination="oLE-f2-K3l" id="yv1-TD-vp7"/>
+                <outlet property="accountName" destination="00m-Z8-GKE" id="wvi-z1-LiZ"/>
+                <outlet property="accountNo" destination="sT5-jf-0h7" id="GLK-1g-ykr"/>
+                <outlet property="cardBg" destination="FKr-RK-PHs" id="WSq-6Q-SDK"/>
+                <outlet property="cardBgBack" destination="Oq5-SE-dHC" id="76t-2n-pP3"/>
+                <outlet property="hideButton" destination="X15-rx-SRi" id="fie-UJ-0DI"/>
+                <outlet property="ledgerBalance" destination="Kqg-ts-M03" id="VsK-Ab-DZt"/>
+                <outlet property="normalButtonsStack" destination="SbR-FD-eon" id="S5u-KO-fbH"/>
+                <outlet property="reactivateBtn" destination="FH2-aH-uci" id="YOl-4n-caU"/>
+                <outlet property="state" destination="Hcp-NJ-Wb3" id="dNE-Bk-Q2E"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="306" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0z-j3-HlW" customClass="CustomView" customModule="AlatFramework" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="306" height="210"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Oq5-SE-dHC">
+                            <rect key="frame" x="0.0" y="0.0" width="306" height="210"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_bg" translatesAutoresizingMaskIntoConstraints="NO" id="FKr-RK-PHs">
+                            <rect key="frame" x="0.0" y="0.0" width="306" height="210"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6v-Pf-Xv1">
+                            <rect key="frame" x="80" y="0.0" width="146" height="25"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="curved_shape" translatesAutoresizingMaskIntoConstraints="NO" id="BDA-HR-JcK">
+                                    <rect key="frame" x="0.0" y="0.0" width="146" height="25"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CORPORATE (DORMANT)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcp-NJ-Wb3" customClass="SemiLabel" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="7.6666666666666679" width="106" height="10"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="BDA-HR-JcK" firstAttribute="leading" secondItem="W6v-Pf-Xv1" secondAttribute="leading" id="Iaj-6b-Bg8"/>
+                                <constraint firstItem="BDA-HR-JcK" firstAttribute="top" secondItem="W6v-Pf-Xv1" secondAttribute="top" id="Iur-Ub-qYb"/>
+                                <constraint firstAttribute="height" constant="25" id="X2l-mu-tLR"/>
+                                <constraint firstItem="Hcp-NJ-Wb3" firstAttribute="centerY" secondItem="W6v-Pf-Xv1" secondAttribute="centerY" id="btl-rT-FLp"/>
+                                <constraint firstAttribute="trailing" secondItem="BDA-HR-JcK" secondAttribute="trailing" id="eng-tf-aeC"/>
+                                <constraint firstAttribute="bottom" secondItem="BDA-HR-JcK" secondAttribute="bottom" id="fMW-pW-eaW"/>
+                                <constraint firstAttribute="width" constant="146" id="mfg-j0-cgR"/>
+                                <constraint firstAttribute="trailing" secondItem="Hcp-NJ-Wb3" secondAttribute="trailing" constant="20" id="qLK-7j-zMK"/>
+                                <constraint firstItem="Hcp-NJ-Wb3" firstAttribute="leading" secondItem="W6v-Pf-Xv1" secondAttribute="leading" constant="20" id="y8H-5J-6Pr"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dyy-vi-fem">
+                            <rect key="frame" x="25" y="35" width="256" height="148"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eze and Sons Int’l LTD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00m-Z8-GKE" customClass="MediumLabel" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="126.33333333333333" height="14.666666666666666"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ZiG-3P-Bny">
+                                    <rect key="frame" x="0.0" y="24.666666666666668" width="227.33333333333334" height="50.666666666666657"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avail. Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twM-a0-suj" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="65" height="12.333333333333334"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FVg-Je-2DT">
+                                            <rect key="frame" x="0.0" y="15.333333333333336" width="227.33333333333334" height="20"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₦ 000,000,000,000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLE-f2-K3l" customClass="BoldLabel" customModule="AlatFramework" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="197.33333333333334" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                                            <real key="value" value="17"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X15-rx-SRi">
+                                                    <rect key="frame" x="207.33333333333334" y="0.0" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="vuB-Mo-BLl"/>
+                                                        <constraint firstAttribute="height" constant="20" id="w2Z-IT-VGC"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Button" image="eye_off">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="hideTapped:" destination="-1" eventType="touchUpInside" id="1lT-BL-Ylp"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vUW-wf-WVV">
+                                            <rect key="frame" x="0.0" y="38.333333333333336" width="193.66666666666666" height="12.333333333333336"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ledger Balance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHy-he-Oir" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="76.333333333333329" height="12.333333333333334"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₦ 000,000,000,000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqg-ts-M03" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                                                    <rect key="frame" x="86.333333333333343" y="0.0" width="107.33333333333334" height="12.333333333333334"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="z1G-EC-IGc">
+                                    <rect key="frame" x="0.0" y="85.333333333333329" width="163" height="22"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0122901290" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sT5-jf-0h7" customClass="SemiLabel" customModule="AlatFramework" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="3" width="79.666666666666671" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                                    <real key="value" value="13"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWN-vE-GlG">
+                                            <rect key="frame" x="87.666666666666686" y="0.0" width="75.333333333333314" height="22"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="copy_icon"/>
+                                            <connections>
+                                                <action selector="copyTapped:" destination="-1" eventType="touchUpInside" id="FF9-A3-fYR"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FH2-aH-uci" customClass="WhiteButton" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="112.33333333333334" width="256" height="30.666666666666657"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30.800000000000001" id="3DN-YF-8I2"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Reactivate"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSmall" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="reactivateTapped:" destination="-1" eventType="touchUpInside" id="ajS-WJ-Tlh"/>
+                                    </connections>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="SbR-FD-eon">
+                                    <rect key="frame" x="0.0" y="117.33333333333336" width="256" height="30.666666666666671"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaN-eG-3RK" customClass="WhiteButton" customModule="AlatFramework" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="30.666666666666668"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30.800000000000001" id="Isb-2O-tFe"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Fund Account"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSmall" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="fundTapped:" destination="-1" eventType="touchUpInside" id="S36-ek-bie"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvI-wR-dEc" customClass="WhiteButton" customModule="AlatFramework" customModuleProvider="target">
+                                            <rect key="frame" x="131.66666666666666" y="0.0" width="124.33333333333334" height="30.666666666666668"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30.800000000000001" id="P9e-LT-7DV"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Transaction History"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSmall" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="historyTapped:" destination="-1" eventType="touchUpInside" id="lHb-1m-EHb"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="FH2-aH-uci" secondAttribute="trailing" id="IES-ui-GFL"/>
+                                <constraint firstItem="FH2-aH-uci" firstAttribute="leading" secondItem="dyy-vi-fem" secondAttribute="leading" id="Ivy-en-jds"/>
+                                <constraint firstItem="JvI-wR-dEc" firstAttribute="width" secondItem="dyy-vi-fem" secondAttribute="width" multiplier="0.485677" id="Ysw-VM-5EJ"/>
+                                <constraint firstItem="qaN-eG-3RK" firstAttribute="width" secondItem="dyy-vi-fem" secondAttribute="width" multiplier="0.486979" id="kYs-kB-eqW"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SbR-FD-eon" secondAttribute="trailing" id="nce-LX-C9k"/>
+                                <constraint firstItem="SbR-FD-eon" firstAttribute="leading" secondItem="dyy-vi-fem" secondAttribute="leading" id="uEj-s2-SrZ"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Oq5-SE-dHC" firstAttribute="top" secondItem="K0z-j3-HlW" secondAttribute="top" id="D3y-DM-RBA"/>
+                        <constraint firstAttribute="bottom" secondItem="FKr-RK-PHs" secondAttribute="bottom" id="EWe-hE-cpg"/>
+                        <constraint firstItem="FKr-RK-PHs" firstAttribute="top" secondItem="K0z-j3-HlW" secondAttribute="top" id="GGI-tL-SYa"/>
+                        <constraint firstItem="W6v-Pf-Xv1" firstAttribute="top" secondItem="K0z-j3-HlW" secondAttribute="top" id="ON9-ud-2lM"/>
+                        <constraint firstAttribute="trailing" secondItem="Oq5-SE-dHC" secondAttribute="trailing" id="Rzn-ce-M44"/>
+                        <constraint firstItem="W6v-Pf-Xv1" firstAttribute="centerX" secondItem="K0z-j3-HlW" secondAttribute="centerX" id="S2c-8x-l3x"/>
+                        <constraint firstAttribute="trailing" secondItem="dyy-vi-fem" secondAttribute="trailing" constant="25" id="X8y-rS-AIm"/>
+                        <constraint firstAttribute="bottom" secondItem="Oq5-SE-dHC" secondAttribute="bottom" id="Yrj-kL-x6F"/>
+                        <constraint firstItem="dyy-vi-fem" firstAttribute="leading" secondItem="K0z-j3-HlW" secondAttribute="leading" constant="25" id="dBB-DK-UMa"/>
+                        <constraint firstItem="Oq5-SE-dHC" firstAttribute="leading" secondItem="K0z-j3-HlW" secondAttribute="leading" id="lSJ-I4-IoD"/>
+                        <constraint firstAttribute="trailing" secondItem="Oq5-SE-dHC" secondAttribute="trailing" id="m9w-kk-O9I"/>
+                        <constraint firstItem="Oq5-SE-dHC" firstAttribute="leading" secondItem="K0z-j3-HlW" secondAttribute="leading" id="r3Y-yw-WTf"/>
+                        <constraint firstItem="FKr-RK-PHs" firstAttribute="leading" secondItem="K0z-j3-HlW" secondAttribute="leading" id="tVb-Hc-Swc"/>
+                        <constraint firstAttribute="trailing" secondItem="FKr-RK-PHs" secondAttribute="trailing" id="tqd-Qo-iR6"/>
+                        <constraint firstItem="dyy-vi-fem" firstAttribute="top" secondItem="K0z-j3-HlW" secondAttribute="top" constant="35" id="wtK-87-3UC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="K0z-j3-HlW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9Ut-8u-6zN"/>
+                <constraint firstItem="K0z-j3-HlW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ahc-bn-zfw"/>
+                <constraint firstAttribute="bottom" secondItem="K0z-j3-HlW" secondAttribute="bottom" id="OcS-xT-oZp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="K0z-j3-HlW" secondAttribute="trailing" id="iUH-ew-Nov"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-786" y="-195"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="00m-Z8-GKE">
+            <size key="intrinsicContentSize" width="126.33333333333333" height="14.666666666666666"/>
+        </designable>
+        <designable name="FH2-aH-uci">
+            <size key="intrinsicContentSize" width="51" height="25"/>
+        </designable>
+        <designable name="Hcp-NJ-Wb3">
+            <size key="intrinsicContentSize" width="99" height="10"/>
+        </designable>
+        <designable name="JvI-wR-dEc">
+            <size key="intrinsicContentSize" width="94" height="25"/>
+        </designable>
+        <designable name="Kqg-ts-M03">
+            <size key="intrinsicContentSize" width="107.33333333333333" height="12.333333333333334"/>
+        </designable>
+        <designable name="LHy-he-Oir">
+            <size key="intrinsicContentSize" width="76.333333333333329" height="12.333333333333334"/>
+        </designable>
+        <designable name="oLE-f2-K3l">
+            <size key="intrinsicContentSize" width="197.33333333333334" height="20.666666666666668"/>
+        </designable>
+        <designable name="qaN-eG-3RK">
+            <size key="intrinsicContentSize" width="67" height="25"/>
+        </designable>
+        <designable name="sT5-jf-0h7">
+            <size key="intrinsicContentSize" width="79.666666666666671" height="16"/>
+        </designable>
+        <designable name="twM-a0-suj">
+            <size key="intrinsicContentSize" width="65" height="12.333333333333334"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="card_bg" width="306" height="180"/>
+        <image name="copy_icon" width="75.333335876464844" height="18"/>
+        <image name="curved_shape" width="146" height="25"/>
+        <image name="eye_off" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

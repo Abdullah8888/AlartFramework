@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecipientListModal" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelIcon" destination="TrI-fR-uNb" id="doh-TD-wjz"/>
+                <outlet property="contentView" destination="JG3-py-AJW" id="lkv-7g-sq3"/>
+                <outlet property="recipientTable" destination="xaK-vz-ozg" id="muK-TT-8RK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JG3-py-AJW">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6J-8a-u1N" customClass="CustomView" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="169" y="15" width="55" height="5"/>
+                            <color key="backgroundColor" name="Background"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="F24-PY-62h"/>
+                                <constraint firstAttribute="width" constant="55" id="GqR-mS-rpv"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="2.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                    <color key="value" name="Background"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qI8-60-y6Y" customClass="MediumLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="16" y="45" width="115" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                    <real key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close_icon" translatesAutoresizingMaskIntoConstraints="NO" id="TrI-fR-uNb">
+                            <rect key="frame" x="357" y="46" width="20" height="20"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="4cG-Ry-mP4"/>
+                                <constraint firstAttribute="height" constant="20" id="VxJ-ws-Cei"/>
+                            </constraints>
+                        </imageView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xaK-vz-ozg">
+                            <rect key="frame" x="0.0" y="162" width="393" height="688"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="rxU-9O-CgJ"/>
+                                <outlet property="delegate" destination="-1" id="P8W-5e-SSv"/>
+                            </connections>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7XW-97-WkW">
+                            <rect key="frame" x="0.0" y="84" width="393" height="1"/>
+                            <color key="backgroundColor" name="Background"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="6Ft-Gi-tVX"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#      Recipients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loM-Do-xwk" customClass="SemiLabel" customModule="AlatFramework">
+                            <rect key="frame" x="25.000000000000007" y="115" width="98.666666666666686" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="qI8-60-y6Y" firstAttribute="top" secondItem="C6J-8a-u1N" secondAttribute="bottom" constant="25" id="C7u-D2-RMD"/>
+                        <constraint firstItem="xaK-vz-ozg" firstAttribute="leading" secondItem="JG3-py-AJW" secondAttribute="leading" id="EsC-t3-LQx"/>
+                        <constraint firstAttribute="trailing" secondItem="7XW-97-WkW" secondAttribute="trailing" id="Ng1-h0-e1p"/>
+                        <constraint firstItem="loM-Do-xwk" firstAttribute="top" secondItem="7XW-97-WkW" secondAttribute="bottom" constant="30" id="ObO-39-xft"/>
+                        <constraint firstItem="TrI-fR-uNb" firstAttribute="centerY" secondItem="qI8-60-y6Y" secondAttribute="centerY" id="OpA-7T-1SH"/>
+                        <constraint firstItem="qI8-60-y6Y" firstAttribute="leading" secondItem="JG3-py-AJW" secondAttribute="leading" constant="16" id="UtO-Nh-yVp"/>
+                        <constraint firstItem="7XW-97-WkW" firstAttribute="leading" secondItem="JG3-py-AJW" secondAttribute="leading" id="XGU-cG-vL0"/>
+                        <constraint firstItem="C6J-8a-u1N" firstAttribute="top" secondItem="JG3-py-AJW" secondAttribute="top" constant="15" id="bA6-f9-6GM"/>
+                        <constraint firstItem="C6J-8a-u1N" firstAttribute="centerX" secondItem="JG3-py-AJW" secondAttribute="centerX" id="d8g-te-zo0"/>
+                        <constraint firstItem="xaK-vz-ozg" firstAttribute="top" secondItem="loM-Do-xwk" secondAttribute="bottom" constant="30" id="exW-pf-cFw"/>
+                        <constraint firstItem="7XW-97-WkW" firstAttribute="top" secondItem="qI8-60-y6Y" secondAttribute="bottom" constant="17" id="jn8-WW-7BS"/>
+                        <constraint firstAttribute="trailing" secondItem="xaK-vz-ozg" secondAttribute="trailing" id="jqz-P0-Fus"/>
+                        <constraint firstAttribute="trailing" secondItem="TrI-fR-uNb" secondAttribute="trailing" constant="16" id="kom-nR-dOj"/>
+                        <constraint firstAttribute="bottom" secondItem="xaK-vz-ozg" secondAttribute="bottom" constant="2" id="qAY-2L-L81"/>
+                        <constraint firstItem="loM-Do-xwk" firstAttribute="leading" secondItem="JG3-py-AJW" secondAttribute="leading" constant="25" id="ssb-Td-FOL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JG3-py-AJW" secondAttribute="trailing" id="4lO-Oy-0qz"/>
+                <constraint firstItem="JG3-py-AJW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eoi-bn-qN5"/>
+                <constraint firstAttribute="bottom" secondItem="JG3-py-AJW" secondAttribute="bottom" id="mKP-ZW-BSe"/>
+                <constraint firstItem="JG3-py-AJW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qUe-tk-KHv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="loM-Do-xwk">
+            <size key="intrinsicContentSize" width="98.666666666666671" height="17"/>
+        </designable>
+        <designable name="qI8-60-y6Y">
+            <size key="intrinsicContentSize" width="115" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="close_icon" width="24" height="24"/>
+        <namedColor name="Background">
+            <color red="0.7686274509803922" green="0.7686274509803922" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

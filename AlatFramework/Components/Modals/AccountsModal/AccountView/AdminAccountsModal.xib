@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdminAccountsModal" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="CFX-ND-uAk" id="m4A-1i-ohT"/>
+                <outlet property="contentView" destination="kE2-Gl-6t8" id="Afc-UM-lg7"/>
+                <outlet property="proceedBtn" destination="QZa-NF-QoL" id="gyZ-q4-lKs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="616"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmb-fH-cjy">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="616"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kE2-Gl-6t8" customClass="CustomView" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="169" y="15" width="55" height="5"/>
+                            <color key="backgroundColor" name="Background"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="VOe-KV-91A"/>
+                                <constraint firstAttribute="height" constant="5" id="pAT-NV-Qjo"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="2.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L3-xV-eFl" customClass="MediumLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="16" y="60" width="361" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                    <real key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlZ-Bz-9ko">
+                            <rect key="frame" x="11" y="99" width="371" height="1"/>
+                            <color key="backgroundColor" name="Background"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="3kx-d4-XMu"/>
+                            </constraints>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CFX-ND-uAk">
+                            <rect key="frame" x="10" y="110" width="373" height="506"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tN4-Tm-eEQ">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZa-NF-QoL" customClass="PrimaryButton" customModule="AlatFramework">
+                            <rect key="frame" x="25" y="546" width="343" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="wpZ-tx-e0h"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Proceed"/>
+                            <connections>
+                                <action selector="proceedTapped:" destination="-1" eventType="touchUpInside" id="5Om-RL-inM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="0L3-xV-eFl" firstAttribute="top" secondItem="kE2-Gl-6t8" secondAttribute="bottom" constant="40" id="58C-nu-UBb"/>
+                        <constraint firstAttribute="trailing" secondItem="QZa-NF-QoL" secondAttribute="trailing" constant="25" id="GOi-KR-cpM"/>
+                        <constraint firstItem="QZa-NF-QoL" firstAttribute="leading" secondItem="pmb-fH-cjy" secondAttribute="leading" constant="25" id="JCQ-ym-uAZ"/>
+                        <constraint firstItem="XlZ-Bz-9ko" firstAttribute="top" secondItem="0L3-xV-eFl" secondAttribute="bottom" constant="17" id="Lw1-56-a1u"/>
+                        <constraint firstItem="kE2-Gl-6t8" firstAttribute="top" secondItem="pmb-fH-cjy" secondAttribute="top" constant="15" id="Rwi-t2-ESV"/>
+                        <constraint firstItem="0L3-xV-eFl" firstAttribute="leading" secondItem="pmb-fH-cjy" secondAttribute="leading" constant="16" id="W1r-BK-32X"/>
+                        <constraint firstItem="XlZ-Bz-9ko" firstAttribute="leading" secondItem="pmb-fH-cjy" secondAttribute="leading" constant="11" id="ZeS-Ax-dSd"/>
+                        <constraint firstItem="CFX-ND-uAk" firstAttribute="leading" secondItem="pmb-fH-cjy" secondAttribute="leading" constant="10" id="aCF-j8-h2z"/>
+                        <constraint firstAttribute="trailing" secondItem="XlZ-Bz-9ko" secondAttribute="trailing" constant="11" id="bVj-GS-9XY"/>
+                        <constraint firstItem="kE2-Gl-6t8" firstAttribute="centerX" secondItem="pmb-fH-cjy" secondAttribute="centerX" id="bXh-KP-7D6"/>
+                        <constraint firstItem="0L3-xV-eFl" firstAttribute="centerX" secondItem="pmb-fH-cjy" secondAttribute="centerX" id="jE6-Bd-TBV"/>
+                        <constraint firstAttribute="bottom" secondItem="CFX-ND-uAk" secondAttribute="bottom" id="jjv-gz-SDS"/>
+                        <constraint firstItem="CFX-ND-uAk" firstAttribute="top" secondItem="XlZ-Bz-9ko" secondAttribute="bottom" constant="10" id="unU-ig-2hI"/>
+                        <constraint firstAttribute="trailing" secondItem="CFX-ND-uAk" secondAttribute="trailing" constant="10" id="ypP-Rg-fPz"/>
+                        <constraint firstAttribute="bottom" secondItem="QZa-NF-QoL" secondAttribute="bottom" constant="20" id="zGt-fe-8E0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="pmb-fH-cjy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NNk-XJ-qvK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="pmb-fH-cjy" secondAttribute="bottom" id="Rtk-Sw-x3x"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pmb-fH-cjy" secondAttribute="trailing" id="hfQ-GP-juH"/>
+                <constraint firstItem="pmb-fH-cjy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qPl-j9-FnG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="116.79389312977099" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="0L3-xV-eFl">
+            <size key="intrinsicContentSize" width="131" height="22"/>
+        </designable>
+        <designable name="QZa-NF-QoL">
+            <size key="intrinsicContentSize" width="87.666666666666671" height="34.333333333333336"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="Background">
+            <color red="0.7686274509803922" green="0.7686274509803922" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

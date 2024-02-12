@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountsModal" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="accountTable" destination="Lz2-AC-utD" id="j6J-eB-qKo"/>
+                <outlet property="cancelIcon" destination="R8M-5k-kT8" id="jec-PA-UEB"/>
+                <outlet property="contentView" destination="qdx-xr-vWC" id="UCt-5n-50I"/>
+                <outlet property="modalTitle" destination="c59-pF-rcR" id="uEb-Jw-ane"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="616"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdx-xr-vWC">
+                    <rect key="frame" x="0.0" y="0.0" width="371" height="582"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0f-XA-iuT" customClass="CustomView" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="158" y="15" width="55" height="5"/>
+                            <color key="backgroundColor" name="Background"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="CGI-CW-xDb"/>
+                                <constraint firstAttribute="height" constant="5" id="elV-HL-yTI"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="2.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                    <color key="value" name="Background"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select account to credit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c59-pF-rcR" customClass="BoldLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="16" y="59.999999999999993" width="204.33333333333334" height="21.666666666666664"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                    <real key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close_icon" translatesAutoresizingMaskIntoConstraints="NO" id="R8M-5k-kT8">
+                            <rect key="frame" x="335" y="61" width="20" height="20"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Pcq-vS-H4s"/>
+                                <constraint firstAttribute="height" constant="20" id="wC1-Rt-HOd"/>
+                            </constraints>
+                        </imageView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Lz2-AC-utD">
+                            <rect key="frame" x="10" y="114.66666666666666" width="351" height="465.33333333333337"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="a0L-8E-uDi"/>
+                                <outlet property="delegate" destination="-1" id="xuO-qN-BjZ"/>
+                            </connections>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ypu-cr-Pcl">
+                            <rect key="frame" x="0.0" y="98.666666666666671" width="371" height="1"/>
+                            <color key="backgroundColor" name="Background"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="WSL-rm-LVH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="c59-pF-rcR" firstAttribute="top" secondItem="b0f-XA-iuT" secondAttribute="bottom" constant="40" id="1eV-E7-G7H"/>
+                        <constraint firstItem="c59-pF-rcR" firstAttribute="leading" secondItem="qdx-xr-vWC" secondAttribute="leading" constant="16" id="Blv-wz-lKQ"/>
+                        <constraint firstItem="Lz2-AC-utD" firstAttribute="leading" secondItem="qdx-xr-vWC" secondAttribute="leading" constant="10" id="Gdh-UA-6cS"/>
+                        <constraint firstAttribute="trailing" secondItem="Lz2-AC-utD" secondAttribute="trailing" constant="10" id="N1u-Ju-Ick"/>
+                        <constraint firstItem="Lz2-AC-utD" firstAttribute="top" secondItem="Ypu-cr-Pcl" secondAttribute="bottom" constant="15" id="U4a-ob-QiO"/>
+                        <constraint firstItem="Ypu-cr-Pcl" firstAttribute="top" secondItem="c59-pF-rcR" secondAttribute="bottom" constant="17" id="VI3-CW-v3J"/>
+                        <constraint firstItem="b0f-XA-iuT" firstAttribute="top" secondItem="qdx-xr-vWC" secondAttribute="top" constant="15" id="Xkr-57-5TL"/>
+                        <constraint firstItem="R8M-5k-kT8" firstAttribute="centerY" secondItem="c59-pF-rcR" secondAttribute="centerY" id="Ylh-nr-8xz"/>
+                        <constraint firstItem="b0f-XA-iuT" firstAttribute="centerX" secondItem="qdx-xr-vWC" secondAttribute="centerX" id="Yvq-NN-uG2"/>
+                        <constraint firstAttribute="trailing" secondItem="Ypu-cr-Pcl" secondAttribute="trailing" id="fHf-fv-AC7"/>
+                        <constraint firstAttribute="bottom" secondItem="Lz2-AC-utD" secondAttribute="bottom" constant="2" id="hX7-Gi-Xa0"/>
+                        <constraint firstAttribute="trailing" secondItem="R8M-5k-kT8" secondAttribute="trailing" constant="16" id="jdb-Ae-u9m"/>
+                        <constraint firstItem="Ypu-cr-Pcl" firstAttribute="leading" secondItem="qdx-xr-vWC" secondAttribute="leading" id="o3C-go-2Sv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qdx-xr-vWC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2xr-CX-Wdt"/>
+                <constraint firstAttribute="trailing" secondItem="qdx-xr-vWC" secondAttribute="trailing" id="Lb7-lk-gap"/>
+                <constraint firstItem="qdx-xr-vWC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fkz-lP-Dm7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qdx-xr-vWC" secondAttribute="bottom" id="n5Q-Lf-xcY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="113.74045801526717" y="-95.774647887323951"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="c59-pF-rcR">
+            <size key="intrinsicContentSize" width="204.33333333333334" height="21.666666666666668"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="close_icon" width="24" height="24"/>
+        <namedColor name="Background">
+            <color red="0.7686274509803922" green="0.7686274509803922" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

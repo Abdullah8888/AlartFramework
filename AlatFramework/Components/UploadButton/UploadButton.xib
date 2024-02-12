@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UploadButton" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="contentStack" destination="Dxq-SK-iH7" id="vOw-kh-if0"/>
+                <outlet property="error" destination="Cbt-1x-etc" id="cll-Nz-ZoT"/>
+                <outlet property="errorStack" destination="UM7-y2-0yY" id="m0j-LG-aoa"/>
+                <outlet property="infoLabel" destination="oGm-dW-dzy" id="4c2-Lo-24r"/>
+                <outlet property="titleLabel" destination="Tbz-PJ-8oU" id="Ljb-9C-a3T"/>
+                <outlet property="uploadButton" destination="yNU-5n-UFn" id="lrp-uS-jVA"/>
+                <outlet property="uploadImage" destination="DF4-lv-nkg" id="FCq-y2-kec"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="197"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Dxq-SK-iH7">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="197"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" ambiguous="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbz-PJ-8oU" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="19.666666666666668"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="TitleGrey"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                    <real key="value" value="14"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C6z-uf-D7I" customClass="CustomView" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="31.666666666666671" width="393" height="107.00000000000001"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PHx-oS-iy0">
+                                    <rect key="frame" x="15" y="8" width="370" height="91"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNU-5n-UFn" customClass="PlainButton" customModule="AlatFramework" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="213" height="91"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Tap to upload certificate"/>
+                                            <connections>
+                                                <action selector="uploadTapped:" destination="-1" eventType="touchUpInside" id="qiD-iQ-RzC"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vxm-aa-b61" customClass="CustomView" customModule="AlatFramework" customModuleProvider="target">
+                                            <rect key="frame" x="233" y="0.0" width="137" height="91"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload_icon" translatesAutoresizingMaskIntoConstraints="NO" id="DF4-lv-nkg">
+                                                    <rect key="frame" x="10" y="10" width="117" height="71"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="GreyLight"/>
+                                            <constraints>
+                                                <constraint firstItem="DF4-lv-nkg" firstAttribute="top" secondItem="Vxm-aa-b61" secondAttribute="top" constant="10" id="DAn-j3-e8O"/>
+                                                <constraint firstItem="DF4-lv-nkg" firstAttribute="leading" secondItem="Vxm-aa-b61" secondAttribute="leading" constant="10" id="Ys5-UE-VC3"/>
+                                                <constraint firstAttribute="trailing" secondItem="DF4-lv-nkg" secondAttribute="trailing" constant="10" id="bZu-Ke-rZ2"/>
+                                                <constraint firstAttribute="bottom" secondItem="DF4-lv-nkg" secondAttribute="bottom" constant="10" id="ppV-iM-uql"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                    <color key="value" name="GreyLight"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="dashedBorder" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="6"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" name="Background"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Vxm-aa-b61" firstAttribute="width" secondItem="PHx-oS-iy0" secondAttribute="width" multiplier="0.37" id="2AG-aN-6rn"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" name="GreyLight"/>
+                            <constraints>
+                                <constraint firstItem="PHx-oS-iy0" firstAttribute="leading" secondItem="C6z-uf-D7I" secondAttribute="leading" constant="15" id="0lQ-CU-UsT"/>
+                                <constraint firstAttribute="height" constant="107" id="QVd-Nk-ZLj"/>
+                                <constraint firstItem="PHx-oS-iy0" firstAttribute="top" secondItem="C6z-uf-D7I" secondAttribute="top" constant="8" id="pVy-Sz-Pr4"/>
+                                <constraint firstAttribute="trailing" secondItem="PHx-oS-iy0" secondAttribute="trailing" constant="8" id="u05-Qs-0fO"/>
+                                <constraint firstAttribute="bottom" secondItem="PHx-oS-iy0" secondAttribute="bottom" constant="8" id="yTJ-Uj-xHH"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                    <color key="value" name="GreyLight"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="dashedBorder" value="YES"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="Background"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Document must be in PDF or JPEG and not more than 1 mb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGm-dW-dzy" customClass="ItalicLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="150.66666666666666" width="393" height="20.333333333333343"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="AlatRed"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                    <real key="value" value="11"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UM7-y2-0yY">
+                            <rect key="frame" x="0.0" y="183" width="393" height="14"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="error_icon" translatesAutoresizingMaskIntoConstraints="NO" id="dz7-fK-Dwu">
+                                    <rect key="frame" x="0.0" y="0.0" width="14" height="14"/>
+                                    <color key="tintColor" name="AlatRed"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="14" id="3A8-Lo-b2a"/>
+                                        <constraint firstAttribute="height" constant="14" id="Onr-cd-xH4"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbt-1x-etc" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="19" y="0.0" width="374" height="14"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" name="Error"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Dxq-SK-iH7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Uyr-i1-Fcx"/>
+                <constraint firstItem="Dxq-SK-iH7" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="YDR-Nh-YIw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Dxq-SK-iH7" secondAttribute="bottom" id="hg6-jR-V47"/>
+                <constraint firstItem="Dxq-SK-iH7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wJT-4q-ue8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-113.74045801526717" y="-67.25352112676056"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Cbt-1x-etc">
+            <size key="intrinsicContentSize" width="31" height="14.666666666666666"/>
+        </designable>
+        <designable name="Tbz-PJ-8oU">
+            <size key="intrinsicContentSize" width="29.333333333333332" height="17"/>
+        </designable>
+        <designable name="oGm-dW-dzy">
+            <size key="intrinsicContentSize" width="306" height="13.333333333333334"/>
+        </designable>
+        <designable name="yNU-5n-UFn">
+            <size key="intrinsicContentSize" width="167" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="error_icon" width="19" height="19"/>
+        <image name="upload_icon" width="24" height="24"/>
+        <namedColor name="AlatRed">
+            <color red="0.66274509803921566" green="0.031372549019607843" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Background">
+            <color red="0.7686274509803922" green="0.7686274509803922" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Error">
+            <color red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreyLight">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleGrey">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

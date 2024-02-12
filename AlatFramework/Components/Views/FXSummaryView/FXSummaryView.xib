@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FXSummaryView" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="amountValue" destination="Xc5-ZL-ZpH" id="i2e-S0-dRr"/>
+                <outlet property="comissionValue" destination="FYv-EI-VYL" id="G9L-BQ-vdg"/>
+                <outlet property="contentView" destination="OST-6z-evT" id="sdY-Q7-AwV"/>
+                <outlet property="offShoreValue" destination="bzO-MT-nzm" id="H0j-ZO-eMq"/>
+                <outlet property="swiftValue" destination="Z7L-s0-VYO" id="cZg-Tf-sr2"/>
+                <outlet property="totalAmountValue" destination="f2J-1C-shs" id="ZiA-dK-qFy"/>
+                <outlet property="vatValue" destination="vhf-h2-Cw1" id="CeA-MK-MDj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="OST-6z-evT">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="166"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_bg3" translatesAutoresizingMaskIntoConstraints="NO" id="0Rt-Ic-ysL">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="166"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aL-0e-uxF" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="19.999999999999996" y="10" width="37.666666666666657" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$5000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc5-ZL-ZpH" customClass="BoldLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="324.33333333333331" y="9.9999999999999982" width="48.666666666666686" height="19.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzO-MT-nzm" customClass="BoldLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="333.66666666666669" y="37.333333333333336" width="39.333333333333314" height="19.333333333333336"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYv-EI-VYL" customClass="BoldLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="336.33333333333331" y="64.666666666666671" width="36.666666666666686" height="19.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhf-h2-Cw1" customClass="BoldLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="334.33333333333331" y="92" width="38.666666666666686" height="19.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offshore Charge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ra4-IV-k3d" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="20" y="37" width="80" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgg-TD-Oo3" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="20" y="64" width="59" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hf2-X2-7Bd" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="20" y="91" width="19" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Charge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D65-7Q-RYG" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="20.000000000000004" y="118" width="62.333333333333343" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7L-s0-VYO" customClass="BoldLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="334.33333333333331" y="119.33333333333333" width="38.666666666666686" height="19.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25j-1a-gYf" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="20" y="145" width="64" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2J-1C-shs" customClass="BoldLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="326" y="147.66666666666666" width="47" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Ra4-IV-k3d" firstAttribute="leading" secondItem="OST-6z-evT" secondAttribute="leading" constant="20" symbolic="YES" id="0nz-77-nXA"/>
+                        <constraint firstItem="hf2-X2-7Bd" firstAttribute="top" secondItem="sgg-TD-Oo3" secondAttribute="bottom" constant="15" id="23x-KF-qsa"/>
+                        <constraint firstItem="sgg-TD-Oo3" firstAttribute="top" secondItem="Ra4-IV-k3d" secondAttribute="bottom" constant="15" id="8lB-u1-I9r"/>
+                        <constraint firstItem="Z7L-s0-VYO" firstAttribute="top" secondItem="vhf-h2-Cw1" secondAttribute="bottom" constant="8" id="A1U-nE-356"/>
+                        <constraint firstItem="7aL-0e-uxF" firstAttribute="leading" secondItem="OST-6z-evT" secondAttribute="leading" constant="20" id="AN9-Z4-LW4"/>
+                        <constraint firstItem="0Rt-Ic-ysL" firstAttribute="leading" secondItem="OST-6z-evT" secondAttribute="leading" id="AUd-qw-WQ8"/>
+                        <constraint firstAttribute="trailing" secondItem="Xc5-ZL-ZpH" secondAttribute="trailing" constant="20" id="Hxi-2V-Doz"/>
+                        <constraint firstItem="f2J-1C-shs" firstAttribute="top" secondItem="Z7L-s0-VYO" secondAttribute="bottom" constant="9" id="I3D-MB-z53"/>
+                        <constraint firstAttribute="trailing" secondItem="FYv-EI-VYL" secondAttribute="trailing" constant="20" id="Mrr-cl-sVT"/>
+                        <constraint firstAttribute="trailing" secondItem="Z7L-s0-VYO" secondAttribute="trailing" constant="20" id="NkB-qF-BMn"/>
+                        <constraint firstItem="bzO-MT-nzm" firstAttribute="top" secondItem="Xc5-ZL-ZpH" secondAttribute="bottom" constant="8" id="Pgk-ux-qS7"/>
+                        <constraint firstItem="0Rt-Ic-ysL" firstAttribute="top" secondItem="OST-6z-evT" secondAttribute="top" id="Rmz-KM-L9d"/>
+                        <constraint firstItem="FYv-EI-VYL" firstAttribute="top" secondItem="bzO-MT-nzm" secondAttribute="bottom" constant="8" id="V02-w5-buO"/>
+                        <constraint firstAttribute="bottom" secondItem="0Rt-Ic-ysL" secondAttribute="bottom" id="WWV-g2-7eW"/>
+                        <constraint firstItem="sgg-TD-Oo3" firstAttribute="leading" secondItem="OST-6z-evT" secondAttribute="leading" constant="20" symbolic="YES" id="Ymf-gf-l08"/>
+                        <constraint firstAttribute="trailing" secondItem="0Rt-Ic-ysL" secondAttribute="trailing" id="awK-1O-xXl"/>
+                        <constraint firstItem="25j-1a-gYf" firstAttribute="leading" secondItem="OST-6z-evT" secondAttribute="leading" constant="20" symbolic="YES" id="bLl-mN-qzZ"/>
+                        <constraint firstItem="vhf-h2-Cw1" firstAttribute="top" secondItem="FYv-EI-VYL" secondAttribute="bottom" constant="8" id="bR0-Ze-bSW"/>
+                        <constraint firstAttribute="trailing" secondItem="bzO-MT-nzm" secondAttribute="trailing" constant="20" id="eIU-gI-gZ7"/>
+                        <constraint firstItem="Xc5-ZL-ZpH" firstAttribute="top" secondItem="OST-6z-evT" secondAttribute="top" constant="10" id="fTW-bU-TNe"/>
+                        <constraint firstItem="25j-1a-gYf" firstAttribute="top" secondItem="D65-7Q-RYG" secondAttribute="bottom" constant="15" id="gUw-Kf-kF7"/>
+                        <constraint firstItem="D65-7Q-RYG" firstAttribute="top" secondItem="hf2-X2-7Bd" secondAttribute="bottom" constant="15" id="jsm-tH-9IT"/>
+                        <constraint firstAttribute="trailing" secondItem="vhf-h2-Cw1" secondAttribute="trailing" constant="20" id="p0B-5M-HAv"/>
+                        <constraint firstItem="D65-7Q-RYG" firstAttribute="leading" secondItem="OST-6z-evT" secondAttribute="leading" constant="20" symbolic="YES" id="pzA-Zw-yqx"/>
+                        <constraint firstAttribute="trailing" secondItem="f2J-1C-shs" secondAttribute="trailing" constant="20" id="q8M-dQ-hds"/>
+                        <constraint firstItem="hf2-X2-7Bd" firstAttribute="leading" secondItem="OST-6z-evT" secondAttribute="leading" constant="20" symbolic="YES" id="uZ4-iZ-wJP"/>
+                        <constraint firstItem="Ra4-IV-k3d" firstAttribute="top" secondItem="7aL-0e-uxF" secondAttribute="bottom" constant="15" id="ujX-yK-Pf5"/>
+                        <constraint firstItem="7aL-0e-uxF" firstAttribute="top" secondItem="OST-6z-evT" secondAttribute="top" constant="10" id="zlx-ZD-3Fd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="OST-6z-evT" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="7s6-sV-zqN"/>
+                <constraint firstItem="OST-6z-evT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bsq-Eh-BNj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OST-6z-evT" secondAttribute="trailing" id="arB-cK-23u"/>
+                <constraint firstItem="OST-6z-evT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="g3N-MD-oxm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="124" y="21"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="25j-1a-gYf">
+            <size key="intrinsicContentSize" width="64" height="12"/>
+        </designable>
+        <designable name="7aL-0e-uxF">
+            <size key="intrinsicContentSize" width="37.666666666666664" height="12"/>
+        </designable>
+        <designable name="D65-7Q-RYG">
+            <size key="intrinsicContentSize" width="62.333333333333336" height="12"/>
+        </designable>
+        <designable name="FYv-EI-VYL">
+            <size key="intrinsicContentSize" width="36.666666666666664" height="19.333333333333332"/>
+        </designable>
+        <designable name="Ra4-IV-k3d">
+            <size key="intrinsicContentSize" width="80" height="12"/>
+        </designable>
+        <designable name="Xc5-ZL-ZpH">
+            <size key="intrinsicContentSize" width="48.666666666666664" height="19.333333333333332"/>
+        </designable>
+        <designable name="Z7L-s0-VYO">
+            <size key="intrinsicContentSize" width="38.666666666666664" height="19.333333333333332"/>
+        </designable>
+        <designable name="bzO-MT-nzm">
+            <size key="intrinsicContentSize" width="39.333333333333336" height="19.333333333333332"/>
+        </designable>
+        <designable name="f2J-1C-shs">
+            <size key="intrinsicContentSize" width="46.333333333333336" height="19.333333333333332"/>
+        </designable>
+        <designable name="hf2-X2-7Bd">
+            <size key="intrinsicContentSize" width="19" height="12"/>
+        </designable>
+        <designable name="sgg-TD-Oo3">
+            <size key="intrinsicContentSize" width="59" height="12"/>
+        </designable>
+        <designable name="vhf-h2-Cw1">
+            <size key="intrinsicContentSize" width="38.666666666666664" height="19.333333333333332"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="card_bg3" width="328" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

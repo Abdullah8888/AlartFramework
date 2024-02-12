@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SoftTokenModal" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelIcon" destination="YRr-hC-HVg" id="VRA-eT-X1j"/>
+                <outlet property="contentView" destination="2Ob-qO-Slw" id="qTz-W7-34L"/>
+                <outlet property="pinField" destination="Q08-q5-k4r" id="mNA-LC-8Uj"/>
+                <outlet property="tokenField" destination="NRa-Vg-6xr" id="Qaq-ya-usV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="umy-bj-hcA">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="616"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-qO-Slw">
+                    <rect key="frame" x="0.0" y="0.0" width="371" height="582"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jpj-lZ-n0k" customClass="CustomView" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="158" y="15" width="55" height="5"/>
+                            <color key="backgroundColor" name="Background"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="HPd-Vk-UZK"/>
+                                <constraint firstAttribute="height" constant="5" id="O1V-rx-9ai"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="2.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                    <color key="value" name="Background"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Token" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDd-KX-vTV" customClass="BoldLabel" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="15.999999999999993" y="60" width="105.33333333333331" height="22"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                    <real key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close_icon" translatesAutoresizingMaskIntoConstraints="NO" id="YRr-hC-HVg">
+                            <rect key="frame" x="335" y="61" width="20" height="20"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="3OB-LR-PuT"/>
+                                <constraint firstAttribute="height" constant="20" id="qKP-gb-lah"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rrs-8o-lrv">
+                            <rect key="frame" x="20" y="130" width="331" height="170"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q08-q5-k4r" customClass="PinField" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="331" height="75"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="0MO-dB-0XE"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Enter Pin"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRa-Vg-6xr" customClass="PasswordField" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="95" width="331" height="75"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="Vuj-K1-kgO"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Enter Token"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZz-PJ-sJM">
+                            <rect key="frame" x="0.0" y="99" width="371" height="1"/>
+                            <color key="backgroundColor" name="Background"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="odf-gW-2vR"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rj5-1g-7wV" customClass="PrimaryButton" customModule="AlatFramework">
+                            <rect key="frame" x="20" y="504" width="331" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="ldS-GD-9d4"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="qJK-NS-kb5"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Proceed"/>
+                            <connections>
+                                <action selector="proceedTapped:" destination="-1" eventType="touchUpInside" id="Mi1-o0-uUY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="YRr-hC-HVg" firstAttribute="centerY" secondItem="EDd-KX-vTV" secondAttribute="centerY" id="7KL-sV-btb"/>
+                        <constraint firstItem="jpj-lZ-n0k" firstAttribute="top" secondItem="2Ob-qO-Slw" secondAttribute="top" constant="15" id="9RS-nO-XTT"/>
+                        <constraint firstAttribute="trailing" secondItem="YRr-hC-HVg" secondAttribute="trailing" constant="16" id="HNm-Sb-uYb"/>
+                        <constraint firstItem="rj5-1g-7wV" firstAttribute="leading" secondItem="2Ob-qO-Slw" secondAttribute="leading" constant="20" id="MOs-xr-Vlf"/>
+                        <constraint firstAttribute="trailing" secondItem="rrs-8o-lrv" secondAttribute="trailing" constant="20" id="OHs-hd-gvu"/>
+                        <constraint firstItem="jpj-lZ-n0k" firstAttribute="centerX" secondItem="2Ob-qO-Slw" secondAttribute="centerX" id="RKP-aR-NXM"/>
+                        <constraint firstItem="EDd-KX-vTV" firstAttribute="top" secondItem="jpj-lZ-n0k" secondAttribute="bottom" constant="40" id="TiH-J8-coY"/>
+                        <constraint firstAttribute="trailing" secondItem="rj5-1g-7wV" secondAttribute="trailing" constant="20" id="XKl-t5-2J9"/>
+                        <constraint firstItem="HZz-PJ-sJM" firstAttribute="leading" secondItem="2Ob-qO-Slw" secondAttribute="leading" id="aZX-iq-XD6"/>
+                        <constraint firstItem="EDd-KX-vTV" firstAttribute="leading" secondItem="2Ob-qO-Slw" secondAttribute="leading" constant="16" id="cTI-vN-cOy"/>
+                        <constraint firstItem="rrs-8o-lrv" firstAttribute="top" secondItem="HZz-PJ-sJM" secondAttribute="bottom" constant="30" id="czh-Ab-CeI"/>
+                        <constraint firstAttribute="bottom" secondItem="rj5-1g-7wV" secondAttribute="bottom" constant="30" id="gTB-LW-sY9"/>
+                        <constraint firstItem="rrs-8o-lrv" firstAttribute="leading" secondItem="2Ob-qO-Slw" secondAttribute="leading" constant="20" id="pmf-Vl-fOh"/>
+                        <constraint firstAttribute="trailing" secondItem="HZz-PJ-sJM" secondAttribute="trailing" id="qiC-RM-en4"/>
+                        <constraint firstItem="HZz-PJ-sJM" firstAttribute="top" secondItem="EDd-KX-vTV" secondAttribute="bottom" constant="17" id="vz9-wz-DSY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="C4w-xJ-Faw"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2Ob-qO-Slw" firstAttribute="top" secondItem="umy-bj-hcA" secondAttribute="top" id="CnM-BM-QmB"/>
+                <constraint firstItem="C4w-xJ-Faw" firstAttribute="bottom" secondItem="2Ob-qO-Slw" secondAttribute="bottom" id="Vdc-7o-kQN"/>
+                <constraint firstItem="2Ob-qO-Slw" firstAttribute="leading" secondItem="umy-bj-hcA" secondAttribute="leading" id="ZzS-Z7-e2k"/>
+                <constraint firstAttribute="trailing" secondItem="2Ob-qO-Slw" secondAttribute="trailing" id="pOH-pa-Uhy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="113.74045801526717" y="-95.774647887323951"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="EDd-KX-vTV">
+            <size key="intrinsicContentSize" width="105.33333333333333" height="22"/>
+        </designable>
+        <designable name="rj5-1g-7wV">
+            <size key="intrinsicContentSize" width="87.666666666666671" height="34.333333333333336"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="close_icon" width="24" height="24"/>
+        <namedColor name="Background">
+            <color red="0.7686274509803922" green="0.7686274509803922" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

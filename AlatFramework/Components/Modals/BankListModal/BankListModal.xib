@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BankListModal" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="bankTable" destination="qZ1-tb-U8z" id="g4H-Kj-acX"/>
+                <outlet property="cancelIcon" destination="JpO-pq-aEp" id="cpl-a9-2le"/>
+                <outlet property="contentView" destination="S0l-q0-8OI" id="Knm-Co-wTG"/>
+                <outlet property="searchField" destination="NJp-Pb-Fpq" id="mnr-B0-Q06"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="679"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0l-q0-8OI">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="679"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnu-bA-xNQ" customClass="CustomView" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="169" y="15" width="55" height="5"/>
+                            <color key="backgroundColor" name="Background"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="JI8-bu-1hH"/>
+                                <constraint firstAttribute="width" constant="55" id="aOQ-C0-Ccb"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="2.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                    <color key="value" name="Background"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="j9s-X8-kEA">
+                            <rect key="frame" x="25" y="60" width="343" height="619"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ukw-XA-Vt0">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="20"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCm-OX-QTk" customClass="MediumLabel" customModule="AlatFramework" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="308" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                                    <real key="value" value="18"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close_icon" translatesAutoresizingMaskIntoConstraints="NO" id="JpO-pq-aEp">
+                                            <rect key="frame" x="323" y="0.0" width="20" height="20"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="icn-Mw-id9"/>
+                                                <constraint firstAttribute="width" constant="20" id="zkM-jD-Bu2"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJp-Pb-Fpq" customClass="SearchField" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="35" width="343" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="t2K-ea-3bT"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Search bank"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="titleText" value=" "/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qZ1-tb-U8z">
+                                    <rect key="frame" x="0.0" y="125" width="343" height="494"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="vSv-eq-uWa"/>
+                                        <outlet property="delegate" destination="-1" id="LHS-AX-uGf"/>
+                                    </connections>
+                                </tableView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Gnu-bA-xNQ" firstAttribute="centerX" secondItem="S0l-q0-8OI" secondAttribute="centerX" id="Amp-8I-Jef"/>
+                        <constraint firstItem="j9s-X8-kEA" firstAttribute="top" secondItem="Gnu-bA-xNQ" secondAttribute="bottom" constant="40" id="CkA-hW-7So"/>
+                        <constraint firstAttribute="bottom" secondItem="j9s-X8-kEA" secondAttribute="bottom" id="PXH-Zc-GnI"/>
+                        <constraint firstItem="Gnu-bA-xNQ" firstAttribute="top" secondItem="S0l-q0-8OI" secondAttribute="top" constant="15" id="Xrh-2B-RsA"/>
+                        <constraint firstItem="j9s-X8-kEA" firstAttribute="leading" secondItem="S0l-q0-8OI" secondAttribute="leading" constant="25" id="liY-gh-4qs"/>
+                        <constraint firstAttribute="trailing" secondItem="j9s-X8-kEA" secondAttribute="trailing" constant="25" id="tan-Mx-06A"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="S0l-q0-8OI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9Hz-eX-5n5"/>
+                <constraint firstItem="S0l-q0-8OI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UzQ-di-F4l"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="S0l-q0-8OI" secondAttribute="bottom" id="f8g-HP-UVP"/>
+                <constraint firstItem="S0l-q0-8OI" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="v99-Tt-tSX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="136.64122137404578" y="-41.197183098591552"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="aCm-OX-QTk">
+            <size key="intrinsicContentSize" width="52.666666666666664" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="close_icon" width="24" height="24"/>
+        <namedColor name="Background">
+            <color red="0.7686274509803922" green="0.7686274509803922" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

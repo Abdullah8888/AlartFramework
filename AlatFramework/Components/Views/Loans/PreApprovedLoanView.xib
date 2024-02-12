@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PreApprovedLoanView" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="V1T-tg-ftd" id="kW9-HI-AIn"/>
+                <outlet property="forwardImage" destination="XWO-cF-Wfh" id="VfJ-i3-gPo"/>
+                <outlet property="loanIllustrationImage" destination="Lqh-Fc-trh" id="CfT-le-hsb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8c3-LH-Plb">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1T-tg-ftd">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollar" translatesAutoresizingMaskIntoConstraints="NO" id="Lqh-Fc-trh">
+                            <rect key="frame" x="10" y="6" width="80" height="88"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="3m5-cw-td0"/>
+                                <constraint firstAttribute="height" constant="88" id="i21-Kp-qXi"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QkV-Zm-taf">
+                            <rect key="frame" x="110" y="27" width="213" height="46"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pre-approved Loan Offer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4b-ay-KDc" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="213" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are currently qualified for a loan offer of ₦ 2,000,000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HH1-5o-LZM" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="22" width="213" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loan_forward" translatesAutoresizingMaskIntoConstraints="NO" id="XWO-cF-Wfh">
+                            <rect key="frame" x="341" y="34" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="559-An-6WU"/>
+                                <constraint firstAttribute="width" constant="32" id="NSA-VT-T6g"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="QkV-Zm-taf" firstAttribute="centerY" secondItem="V1T-tg-ftd" secondAttribute="centerY" id="0Md-ZP-X6h"/>
+                        <constraint firstAttribute="trailing" secondItem="QkV-Zm-taf" secondAttribute="trailing" constant="70" id="J8A-Y5-KpU"/>
+                        <constraint firstItem="Lqh-Fc-trh" firstAttribute="leading" secondItem="V1T-tg-ftd" secondAttribute="leading" constant="10" id="X2s-qv-3L2"/>
+                        <constraint firstItem="XWO-cF-Wfh" firstAttribute="centerY" secondItem="V1T-tg-ftd" secondAttribute="centerY" id="aYl-O1-eok"/>
+                        <constraint firstItem="QkV-Zm-taf" firstAttribute="leading" secondItem="Lqh-Fc-trh" secondAttribute="trailing" constant="20" id="b9h-DA-apQ"/>
+                        <constraint firstItem="Lqh-Fc-trh" firstAttribute="centerY" secondItem="V1T-tg-ftd" secondAttribute="centerY" id="c7z-rR-BBW"/>
+                        <constraint firstAttribute="trailing" secondItem="XWO-cF-Wfh" secondAttribute="trailing" constant="20" id="r8E-eD-S3T"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="0Gg-tY-bXb"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="V1T-tg-ftd" firstAttribute="leading" secondItem="0Gg-tY-bXb" secondAttribute="leading" id="RS1-aB-ywr"/>
+                <constraint firstItem="0Gg-tY-bXb" firstAttribute="trailing" secondItem="V1T-tg-ftd" secondAttribute="trailing" id="TIg-rP-jVV"/>
+                <constraint firstItem="V1T-tg-ftd" firstAttribute="top" secondItem="8c3-LH-Plb" secondAttribute="top" id="hlr-Tn-2Eg"/>
+                <constraint firstAttribute="bottom" secondItem="V1T-tg-ftd" secondAttribute="bottom" id="jgb-lE-SkW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="118.32061068702289" y="26.760563380281692"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="HH1-5o-LZM">
+            <size key="intrinsicContentSize" width="275.33333333333331" height="12"/>
+        </designable>
+        <designable name="V4b-ay-KDc">
+            <size key="intrinsicContentSize" width="160.66666666666666" height="17"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="dollar" width="40" height="40"/>
+        <image name="loan_forward" width="32" height="33"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

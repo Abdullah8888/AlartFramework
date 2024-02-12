@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoAccountCard" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="actionBtn" destination="sax-6r-d5T" id="ebA-z0-v3x"/>
+                <outlet property="subtitleLabel" destination="rhu-Z1-wYt" id="Wpl-ac-3KR"/>
+                <outlet property="titleLabel" destination="Xsg-eH-IcA" id="mpF-vT-Xjg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="225"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0QK-g6-iRZ" customClass="CustomView" customModule="AlatFramework" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="433" height="225"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_bg" translatesAutoresizingMaskIntoConstraints="NO" id="cHj-f8-A3h">
+                            <rect key="frame" x="0.0" y="0.0" width="433" height="225"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Qcg-uV-Zr0">
+                            <rect key="frame" x="60" y="37.333333333333329" width="313" height="150.33333333333337"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="error_icon" translatesAutoresizingMaskIntoConstraints="NO" id="r2z-8y-bPi">
+                                    <rect key="frame" x="149.66666666666666" y="0.0" width="14" height="14"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="60j-H5-5ZZ"/>
+                                        <constraint firstAttribute="width" constant="14" id="VJE-kq-LRz"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xsg-eH-IcA" customClass="MediumLabel" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="64" y="26" width="185" height="34"/>
+                                    <string key="text">We are currently setting up 
+your account</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                            <real key="value" value="14"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhu-Z1-wYt" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="36" y="72" width="241" height="34.333333333333343"/>
+                                    <string key="text">Complete pending action for your account number 
+to be generated</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sax-6r-d5T" customClass="WhiteButton" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="84" y="118.33333333333331" width="145" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="145" id="I7o-Q3-K0d"/>
+                                        <constraint firstAttribute="height" constant="32" id="lAR-ww-HsK"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Refresh"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSmall" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="refreshTapped:" destination="-1" eventType="touchUpInside" id="DzA-2k-D37"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="cHj-f8-A3h" firstAttribute="leading" secondItem="0QK-g6-iRZ" secondAttribute="leading" id="46p-UW-PKG"/>
+                        <constraint firstAttribute="bottom" secondItem="cHj-f8-A3h" secondAttribute="bottom" id="6a6-U8-ltc"/>
+                        <constraint firstItem="cHj-f8-A3h" firstAttribute="top" secondItem="0QK-g6-iRZ" secondAttribute="top" id="V2g-ch-eJD"/>
+                        <constraint firstAttribute="trailing" secondItem="cHj-f8-A3h" secondAttribute="trailing" id="aVd-dJ-PFL"/>
+                        <constraint firstItem="Qcg-uV-Zr0" firstAttribute="centerY" secondItem="0QK-g6-iRZ" secondAttribute="centerY" id="fAG-Gx-Fec"/>
+                        <constraint firstAttribute="bottom" secondItem="cHj-f8-A3h" secondAttribute="bottom" id="ibp-hc-lve"/>
+                        <constraint firstAttribute="trailing" secondItem="Qcg-uV-Zr0" secondAttribute="trailing" constant="60" id="inm-zz-Uj6"/>
+                        <constraint firstItem="cHj-f8-A3h" firstAttribute="top" secondItem="0QK-g6-iRZ" secondAttribute="top" id="rZg-gH-Zyb"/>
+                        <constraint firstItem="Qcg-uV-Zr0" firstAttribute="leading" secondItem="0QK-g6-iRZ" secondAttribute="leading" constant="60" id="t5I-1f-dkK"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="11.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0QK-g6-iRZ" secondAttribute="bottom" id="10b-B7-9Cz"/>
+                <constraint firstItem="0QK-g6-iRZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6rB-D5-ITl"/>
+                <constraint firstItem="0QK-g6-iRZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AXr-iV-rvs"/>
+                <constraint firstItem="0QK-g6-iRZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ED3-Sf-3ph"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34.351145038167935" y="7.394366197183099"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Xsg-eH-IcA">
+            <size key="intrinsicContentSize" width="185" height="34"/>
+        </designable>
+        <designable name="rhu-Z1-wYt">
+            <size key="intrinsicContentSize" width="241" height="34.333333333333336"/>
+        </designable>
+        <designable name="sax-6r-d5T">
+            <size key="intrinsicContentSize" width="37" height="25"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="card_bg" width="306" height="180"/>
+        <image name="error_icon" width="19" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

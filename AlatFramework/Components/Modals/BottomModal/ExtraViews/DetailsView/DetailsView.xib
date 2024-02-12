@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsView" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="oNC-ft-tA6" id="UdS-fI-Pii"/>
+                <outlet property="detailsLabel" destination="MZ8-GJ-ZHX" id="Ypq-Co-HIo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNC-ft-tA6">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZ8-GJ-ZHX">
+                            <rect key="frame" x="30" y="26" width="333" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="GreyLight"/>
+                    <constraints>
+                        <constraint firstItem="MZ8-GJ-ZHX" firstAttribute="leading" secondItem="oNC-ft-tA6" secondAttribute="leading" constant="30" id="CaS-kQ-wzb"/>
+                        <constraint firstAttribute="trailing" secondItem="MZ8-GJ-ZHX" secondAttribute="trailing" constant="30" id="K2A-6b-Rxm"/>
+                        <constraint firstItem="MZ8-GJ-ZHX" firstAttribute="centerY" secondItem="oNC-ft-tA6" secondAttribute="centerY" id="lGM-XR-QVU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oNC-ft-tA6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1PY-nQ-OA4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oNC-ft-tA6" secondAttribute="trailing" id="Txr-vF-O8Y"/>
+                <constraint firstAttribute="bottom" secondItem="oNC-ft-tA6" secondAttribute="bottom" id="hU7-Au-3O1"/>
+                <constraint firstItem="oNC-ft-tA6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xYQ-C5-Pno"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="GreyLight">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

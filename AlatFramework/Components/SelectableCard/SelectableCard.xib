@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectableCard" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="bottom" destination="WbR-ix-rkL" id="rS1-nr-DkL"/>
+                <outlet property="checkButton" destination="2uA-Xv-j7i" id="uL0-rT-jSy"/>
+                <outlet property="image" destination="Trn-rh-d0I" id="ZbC-FW-Ohk"/>
+                <outlet property="imageHeight" destination="Sf7-pn-cxA" id="9y3-Qj-kwm"/>
+                <outlet property="imageWidth" destination="sMS-5U-gSZ" id="CvN-ym-EBd"/>
+                <outlet property="left" destination="XKu-Ey-aZy" id="drn-Bh-Yc7"/>
+                <outlet property="mainStack" destination="1BD-vz-7CQ" id="frA-24-RNN"/>
+                <outlet property="right" destination="VU9-RX-T05" id="HHp-nw-aGA"/>
+                <outlet property="subtitle" destination="d2z-cj-s0u" id="3xI-in-rYQ"/>
+                <outlet property="title" destination="mgC-HO-lmz" id="SYP-WJ-gWo"/>
+                <outlet property="top" destination="W17-zi-lN7" id="vb0-ZK-aZ3"/>
+                <outlet property="topImage" destination="gUH-Ww-vD1" id="bgk-yQ-ozE"/>
+                <outlet property="topPaddingView" destination="gma-3n-5Qe" id="65y-Jd-3eT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="211"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1BD-vz-7CQ">
+                    <rect key="frame" x="10" y="10" width="372" height="191"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="Qbd-HA-CMq">
+                            <rect key="frame" x="0.0" y="7.6666666666666714" width="352" height="176"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alatforbiz_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Trn-rh-d0I">
+                                    <rect key="frame" x="0.0" y="70" width="36" height="36"/>
+                                    <color key="tintColor" name="AlatRed"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="Sf7-pn-cxA"/>
+                                        <constraint firstAttribute="width" constant="36" id="sMS-5U-gSZ"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="m28-cp-hJX">
+                                    <rect key="frame" x="59" y="0.0" width="293" height="176"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alatforbiz_logo" translatesAutoresizingMaskIntoConstraints="NO" id="gUH-Ww-vD1">
+                                            <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                            <color key="tintColor" name="Black"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="24" id="KL1-Y7-BfF"/>
+                                                <constraint firstAttribute="height" constant="24" id="RgD-IO-0LE"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To get started, let's know more about your Business.To get started, let's know more about your Business." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgC-HO-lmz" customClass="MediumLabel" customModule="AlatFramework" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="29" width="287.66666666666669" height="61"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="TitleGrey"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                                    <real key="value" value="16"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To get started, let's know more about your Business. To get started, let's know more about your Business." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2z-cj-s0u" customClass="LightLabel" customModule="AlatFramework" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="95" width="287.66666666666669" height="61"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="Grey"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gma-3n-5Qe">
+                                            <rect key="frame" x="0.0" y="161" width="240" height="15"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="2uu-NB-HXp"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uA-Xv-j7i" customClass="CheckboxButton" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="352" y="85.666666666666671" width="20" height="20"/>
+                            <color key="backgroundColor" systemColor="systemGray2Color"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="tvi-YU-AcI"/>
+                                <constraint firstAttribute="height" constant="20" id="zza-ij-4GB"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1BD-vz-7CQ" secondAttribute="trailing" constant="10" id="VU9-RX-T05"/>
+                <constraint firstItem="1BD-vz-7CQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="W17-zi-lN7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1BD-vz-7CQ" secondAttribute="bottom" constant="10" id="WbR-ix-rkL"/>
+                <constraint firstItem="1BD-vz-7CQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="XKu-Ey-aZy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-12.213740458015266" y="-160.21126760563382"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="d2z-cj-s0u">
+            <size key="intrinsicContentSize" width="801" height="20.333333333333332"/>
+        </designable>
+        <designable name="mgC-HO-lmz">
+            <size key="intrinsicContentSize" width="795" height="20.333333333333332"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="alatforbiz_logo" width="59.333332061767578" height="59.333332061767578"/>
+        <namedColor name="AlatRed">
+            <color red="0.66274509803921566" green="0.031372549019607843" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Grey">
+            <color red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleGrey">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

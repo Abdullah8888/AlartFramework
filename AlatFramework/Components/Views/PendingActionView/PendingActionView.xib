@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PendingActionView" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="hXL-lA-Y1J" id="xTf-2x-J4v"/>
+                <outlet property="countCircle" destination="U5E-Ab-gRi" id="t8u-98-2OY"/>
+                <outlet property="countLbl" destination="eVu-iu-MBd" id="dVE-Gh-CWj"/>
+                <outlet property="image" destination="9iA-Tt-8OL" id="P2E-It-hMo"/>
+                <outlet property="message" destination="Hpz-Uk-XHp" id="F7U-dX-oHc"/>
+                <outlet property="title" destination="qDI-dl-jWL" id="RrM-9f-IEf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="147"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXL-lA-Y1J">
+                    <rect key="frame" x="0.0" y="0.0" width="344" height="147"/>
+                    <subviews>
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coming_soon" translatesAutoresizingMaskIntoConstraints="NO" id="9iA-Tt-8OL">
+                            <rect key="frame" x="12" y="15" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="ikP-8s-ehB"/>
+                                <constraint firstAttribute="height" constant="48" id="uoF-WP-UYY"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aQX-ib-y7T">
+                            <rect key="frame" x="70" y="13.666666666666668" width="224" height="50.666666666666657"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending approvals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDI-dl-jWL" customClass="SemiLabel" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="224" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                            <real key="value" value="14"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have 10 transaction requests awaiting your approval" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpz-Uk-XHp" customClass="RegularLabel" customModule="AlatFramework" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="22" width="224" height="28.666666666666671"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" name="Grey"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forward_arrow2" translatesAutoresizingMaskIntoConstraints="NO" id="YRp-xG-urd">
+                            <rect key="frame" x="294" y="97" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="L7u-8e-fn9"/>
+                                <constraint firstAttribute="height" constant="30" id="veq-jU-WhL"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svr-uR-6nk">
+                            <rect key="frame" x="233" y="106" width="56" height="12"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                            <color key="textColor" name="AlatRed"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5E-Ab-gRi" customClass="CustomView" customModule="AlatFramework" customModuleProvider="target">
+                            <rect key="frame" x="12" y="15" width="50" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVu-iu-MBd">
+                                    <rect key="frame" x="21.333333333333336" y="16.666666666666668" width="7.6666666666666679" height="17.000000000000004"/>
+                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                    <color key="textColor" name="Pending"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="4jB-VN-dgs"/>
+                                <constraint firstItem="eVu-iu-MBd" firstAttribute="centerX" secondItem="U5E-Ab-gRi" secondAttribute="centerX" id="6Hx-MS-8aX"/>
+                                <constraint firstAttribute="height" constant="50" id="ljQ-Sq-HBh"/>
+                                <constraint firstItem="eVu-iu-MBd" firstAttribute="centerY" secondItem="U5E-Ab-gRi" secondAttribute="centerY" id="oj1-ec-3mm"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="Pending"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="YRp-xG-urd" firstAttribute="centerY" secondItem="svr-uR-6nk" secondAttribute="centerY" id="1KX-8x-37A"/>
+                        <constraint firstItem="9iA-Tt-8OL" firstAttribute="top" secondItem="hXL-lA-Y1J" secondAttribute="top" constant="15" id="9fU-GK-i7a"/>
+                        <constraint firstItem="9iA-Tt-8OL" firstAttribute="leading" secondItem="hXL-lA-Y1J" secondAttribute="leading" constant="12" id="BPr-g1-ugK"/>
+                        <constraint firstItem="YRp-xG-urd" firstAttribute="leading" secondItem="svr-uR-6nk" secondAttribute="trailing" constant="5" id="DQo-Yn-me0"/>
+                        <constraint firstItem="aQX-ib-y7T" firstAttribute="leading" secondItem="9iA-Tt-8OL" secondAttribute="trailing" constant="10" id="HzB-lb-tB1"/>
+                        <constraint firstAttribute="bottom" secondItem="YRp-xG-urd" secondAttribute="bottom" constant="20" id="Q3w-kL-BYR"/>
+                        <constraint firstItem="aQX-ib-y7T" firstAttribute="centerY" secondItem="9iA-Tt-8OL" secondAttribute="centerY" id="WkC-W8-c46"/>
+                        <constraint firstItem="U5E-Ab-gRi" firstAttribute="top" secondItem="hXL-lA-Y1J" secondAttribute="top" constant="15" id="Xyt-9A-pYe"/>
+                        <constraint firstItem="U5E-Ab-gRi" firstAttribute="leading" secondItem="hXL-lA-Y1J" secondAttribute="leading" constant="12" id="jJD-BL-lhh"/>
+                        <constraint firstAttribute="trailing" secondItem="aQX-ib-y7T" secondAttribute="trailing" constant="50" id="kp4-Td-gSk"/>
+                        <constraint firstAttribute="trailing" secondItem="YRp-xG-urd" secondAttribute="trailing" constant="20" id="lf9-im-dx7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hXL-lA-Y1J" secondAttribute="trailing" id="Imf-zJ-n3W"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hXL-lA-Y1J" secondAttribute="bottom" id="J53-qj-0tn"/>
+                <constraint firstItem="hXL-lA-Y1J" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="J9L-Hl-IvC"/>
+                <constraint firstItem="hXL-lA-Y1J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RUl-hf-qvq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="coming_soon" width="272" height="286"/>
+        <image name="forward_arrow2" width="32" height="32"/>
+        <namedColor name="AlatRed">
+            <color red="0.66274509803921566" green="0.031372549019607843" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Grey">
+            <color red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Pending">
+            <color red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

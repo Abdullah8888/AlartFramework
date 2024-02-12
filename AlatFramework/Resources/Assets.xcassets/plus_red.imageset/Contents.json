@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "material-symbols_add-circle-outline.svg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "material-symbols_add-circle-outline@2x.svg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "material-symbols_add-circle-outline@3x.svg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

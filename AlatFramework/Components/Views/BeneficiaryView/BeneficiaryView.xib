@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeneficiaryView" customModule="AlatFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="accountNameLbl" destination="pJY-F0-l2A" id="WKM-BC-pu2"/>
+                <outlet property="aliasLbl" destination="Ydt-Uh-CmU" id="CV6-IV-4C6"/>
+                <outlet property="bankAndAccNumberLbl" destination="ugZ-Jo-OIb" id="QRY-Qg-LZr"/>
+                <outlet property="contentView" destination="V4C-mu-hGG" id="Qu4-gK-1PQ"/>
+                <outlet property="icon" destination="JF3-A8-FOb" id="PDK-TW-Znd"/>
+                <outlet property="optionMenu" destination="lCU-Ar-Fb5" id="DVd-4l-BEY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4C-mu-hGG">
+                    <rect key="frame" x="0.0" y="0.0" width="330" height="65"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank" translatesAutoresizingMaskIntoConstraints="NO" id="JF3-A8-FOb">
+                            <rect key="frame" x="16" y="21" width="23" height="23"/>
+                            <color key="tintColor" name="AlatRed"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="23" id="C8e-eX-3YM"/>
+                                <constraint firstAttribute="height" constant="23" id="lYs-Xd-ekD"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="OIh-Js-lXx">
+                            <rect key="frame" x="57" y="14.666666666666664" width="255" height="36"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Zqh-Ex-TfU">
+                                    <rect key="frame" x="0.0" y="0.0" width="255" height="20"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calvin Richards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJY-F0-l2A" customClass="MediumLabel" customModule="AlatFramework" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="255" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="option_dots" translatesAutoresizingMaskIntoConstraints="NO" id="lCU-Ar-Fb5">
+                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                            <color key="tintColor" name="Black"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="ZaR-Av-LIv"/>
+                                                <constraint firstAttribute="height" constant="20" id="sHj-Va-NGE"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="AGn-AT-K8h">
+                                    <rect key="frame" x="0.0" y="24" width="255" height="12"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FCMB | 0098768594" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugZ-Jo-OIb" customClass="LightLabel" customModule="AlatFramework" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="101.33333333333333" height="12"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JohnDoe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydt-Uh-CmU" customClass="LightLabel" customModule="AlatFramework" customModuleProvider="target">
+                                            <rect key="frame" x="212" y="0.0" width="43" height="12"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="OIh-Js-lXx" firstAttribute="centerY" secondItem="V4C-mu-hGG" secondAttribute="centerY" id="WOh-ML-ZCc"/>
+                        <constraint firstItem="OIh-Js-lXx" firstAttribute="leading" secondItem="JF3-A8-FOb" secondAttribute="trailing" constant="18" id="fu6-jf-dTZ"/>
+                        <constraint firstItem="JF3-A8-FOb" firstAttribute="leading" secondItem="V4C-mu-hGG" secondAttribute="leading" constant="16" id="kMy-YH-o4h"/>
+                        <constraint firstItem="JF3-A8-FOb" firstAttribute="centerY" secondItem="V4C-mu-hGG" secondAttribute="centerY" id="uaY-Vw-GJE"/>
+                        <constraint firstAttribute="trailing" secondItem="OIh-Js-lXx" secondAttribute="trailing" constant="18" id="xQ1-G8-EEu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="V4C-mu-hGG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OGs-y2-csN"/>
+                <constraint firstAttribute="bottom" secondItem="V4C-mu-hGG" secondAttribute="bottom" id="QQH-SS-pxg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="V4C-mu-hGG" secondAttribute="trailing" id="QrD-zT-zQP"/>
+                <constraint firstItem="V4C-mu-hGG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nh1-ky-RbY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="151.90839694656489" y="-242.60563380281693"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Ydt-Uh-CmU">
+            <size key="intrinsicContentSize" width="43" height="12"/>
+        </designable>
+        <designable name="pJY-F0-l2A">
+            <size key="intrinsicContentSize" width="90" height="14.333333333333334"/>
+        </designable>
+        <designable name="ugZ-Jo-OIb">
+            <size key="intrinsicContentSize" width="101.33333333333333" height="12"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="bank" width="23.666666030883789" height="23.666666030883789"/>
+        <image name="option_dots" width="36" height="17"/>
+        <namedColor name="AlatRed">
+            <color red="0.66274509803921566" green="0.031372549019607843" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
